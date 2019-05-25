@@ -13,10 +13,10 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
   chrome.tabs.sendMessage(
     tab.id,
     Event.GetIdOfClickedElement,
-    ({value, error}) => {
-      if (!!value && !error) {
+    (result) => {
+      if (result && !!result.value && !result.error) {
         const url = tab.url.split('#')[0]
-        const urlWithReference = `${url}#${value}`
+        const urlWithReference = `${url}#${result.value}`
         copyToClipboard(urlWithReference)
       }
     },

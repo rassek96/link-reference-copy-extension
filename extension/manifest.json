@@ -13,5 +13,10 @@
   "content_scripts": [{
     "js": ["dist/content-script.js"],
     "matches": ["<all_urls>"]
-  }]
+  }],
+  "icons": {
+    "16": "src/assets/link-16px.png",
+    "32": "src/assets/link-32px.png",
+    "128": "src/assets/link-128px.png"
+  }
 }

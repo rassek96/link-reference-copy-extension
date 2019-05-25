@@ -14,8 +14,12 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       return sendResponse({value: null, error: true})
     }
 
-    const id = traverseToFindId(clickedElement)
-
-    return sendResponse({value: id, error: !id})
+    try {
+      const id = traverseToFindId(clickedElement)
+      return sendResponse({value: id, error: !id})
+    }
+    catch (e) {
+      return sendResponse({value: null, error: true})
+    }
   }
 })
