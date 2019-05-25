@@ -1,0 +1,15 @@
+{
+  "name": "link-reference-copy-extension",
+  "version": "1.0.0",
+  "description": "A browser extension that adds an option to immediately get a link to a articles section as reference.",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.86",
+    "ts-loader": "^6.0.1",
+    "typescript": "^3.4.5",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
