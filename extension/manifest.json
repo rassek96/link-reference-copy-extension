@@ -1,0 +1,17 @@
+{
+  "name": "Link Reference Copy",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "permissions": [
+    "contextMenus",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["dist/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "js": ["dist/content-script.js"],
+    "matches": ["<all_urls>"]
+  }]
+}
