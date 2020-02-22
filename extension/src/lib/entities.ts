@@ -1,3 +1,3 @@
 export enum Event {
-  GetIdOfClickedElement = 'getIdOfClickedElement'
+  GetIdOfClickedElement = 'getIdOfClickedElement',
 }
