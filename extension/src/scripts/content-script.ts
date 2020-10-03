@@ -26,7 +26,7 @@ chrome.runtime.onMessage.addListener((request: Event, _, sendResponse) => {
         id = traverseToFindId(clickedElement.parentNode);
       }
 
-      return sendResponse({value: !!id ? id : null, error: false});
+      return sendResponse({value: id || null, error: false});
     } catch (e) {
       return sendResponse({value: null, error: true});
     }
