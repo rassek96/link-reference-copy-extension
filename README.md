@@ -1,6 +1,8 @@
 # link-reference-copy-extension
 
-A browser extension that adds an option to the context menu (right-click menu) to immediately copy a link to the section as an anchor reference/link, i.e. https://github.com/rassek96/link-reference-copy-extension#user-content-link-reference-copy-extension.
+A browser extension that adds an option to the context menu (right-click menu) to immediately copy a link to the section as an anchor reference/link, i.e. https://github.com/rassek96/link-reference-copy-extension#user-content-link-reference-copy-extension.   
+
+![example](example.png)
 
 ### Building
 
